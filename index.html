@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		EXORSA 6.0
+	</title>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles/all.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+
+	<!-- Landing Page -->
+	<header class="header">
+		<div class="text-box">
+			<div class="heading-primary">
+				<span class="heading-primary-main">EXORSA SIX.O</span>
+				<span class="heading-primary-sub">Educate, Innovate, Change.</span>
+				<span class="heading-primary-sub date">Online Technical Fest<br><br>This October</span>
+			</div>
+			<a href="#previous-number" class="btn-arrow"></a>
+		</div>
+	</header>
+
+	<section class="previous-number" id="previous-number">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main">A LookBack to Previous Year</span>
+			</div>
+		</div>
+		<div class="blocks-info">
+			<div class="block">
+				<div class="icons-display">
+					<i class="fas fa-calendar-alt"></i>
+				</div>
+				<div class="numbers">
+					8+ Events
+				</div>
+			</div>
+			<div class="block">
+				<div class="icons-display">
+					<i class="fas fa-trophy"></i>
+				</div>
+				<div class="numbers">
+					INR 10,000+ Prize Money
+				</div>
+			</div>
+			<div class="block">
+				<div class="icons-display">
+					<i class="fas fa-users"></i>
+				</div>
+				<div class="numbers">
+					500+ Participants
+				</div>
+			</div>
+			<div class="block">
+				<div class="icons-display">
+					<i class="fas fa-globe-americas"></i>
+				</div>
+				<div class="numbers">
+					50+ Colleges
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="events-section">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main">Events : </span>
+			</div>
+		</div>
+		<div class="events-blocks">
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-file-alt"></i>
+				</div>
+				<div class="event-title">
+					BLITZKRIEG
+				</div>
+				<div class="event-description">
+
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-lightbulb"></i>
+				</div>
+				<div class="event-title">
+					BRAINSTORM
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fab fa-internet-explorer"></i>
+				</div>
+				<div class="event-title">
+					WWWIZARD
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-tv"></i>
+				</div>
+				<div class="event-title">
+					FAST PRESENTER
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-pen-nib"></i>
+				</div>
+				<div class="event-title">
+					STRING THEORY
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-film"></i>
+				</div>
+				<div class="event-title">
+					TAKE ONE
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-camera-retro"></i>
+				</div>
+				<div class="event-title">
+					CAPTION IT
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="far fa-image"></i>
+				</div>
+				<div class="event-title">
+					#SELFIE
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-code"></i>
+				</div>
+				<div class="event-title">
+					CODE IT!
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+			<div class="event">
+				<div class="event-icon">
+					<i class="fas fa-brain"></i>
+				</div>
+				<div class="event-title">
+					HACKATHON
+				</div>
+				<div class="event-description">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tick-tock">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main register">
+					: Register Fast :
+					<br><br>
+					<span class="time" id="clockdiv">
+						<span class="days">		
+						</span>
+					D:
+						<span class="hours">
+						</span>
+					H:
+						<span class="minutes">
+						</span>
+					M:
+						<span class="seconds">
+						</span>
+					S
+					</span>
+				</span>
+				<script type="text/javascript">
+					function getTimeRemaining(endtime) {
+					  var t = Date.parse(endtime) - Date.parse(new Date());
+					  var seconds = Math.floor((t / 1000) % 60);
+					  var minutes = Math.floor((t / 1000 / 60) % 60);
+					  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+					  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+					  return {
+					    'total': t,
+					    'days': days,
+					    'hours': hours,
+					    'minutes': minutes,
+					    'seconds': seconds
+					  };
+					}
+
+					function initializeClock(id, endtime) {
+					  var clock = document.getElementById(id);
+					  var daysSpan = clock.querySelector('.days');
+					  var hoursSpan = clock.querySelector('.hours');
+					  var minutesSpan = clock.querySelector('.minutes');
+					  var secondsSpan = clock.querySelector('.seconds');
+
+					  function updateClock() {
+					    var t = getTimeRemaining(endtime);
+
+					    daysSpan.innerHTML = t.days;
+					    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+					    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+					    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+					    if (t.total <= 0) {
+					      clearInterval(timeinterval);
+					    }
+					  }
+
+					  updateClock();
+					  var timeinterval = setInterval(updateClock, 1000);
+					}
+
+					var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+					initializeClock('clockdiv', deadline);
+				</script>
+			</div>
+			<a href="#section-about" class="btn btn-primary">Resgister</a>	
+		</div>
+	</section>
+
+	<section class="sponsors">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main spon">Sponsors :</span>
+			</div>
+		</div>
+		<div class="sponsors-list">
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/1.png">
+			</div>
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/2.png">
+			</div>
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/3.jpg">
+			</div>
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/4.jpg">
+			</div>
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/5.jpg">
+			</div>
+			<div class="sponsors-item">
+				<img class="sponsors-image" src="images/6.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="section-comments">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main">Student's Comment :</span>
+			</div>
+		</div>
+		<div class="comments-block">
+			<div class="comment">
+				<div class="pic">
+					<img src="images/s1.jpg">
+				</div>
+				<div class="comment-des">
+					<i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.<i class="fas fa-quote-right"></i> - Naomi
+				</div>
+			</div>
+			<div class="comment">
+				<div class="pic">
+					<img src="images/s2.jpg">
+				</div>
+				<div class="comment-des">
+					<i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco<i class="fas fa-quote-right"></i> - Jack
+				</div>
+			</div>
+			<div class="comment">
+				<div class="pic">
+					<img src="images/s3.jpg">
+				</div>
+				<div class="comment-des">
+					<i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet!<i class="fas fa-quote-right"></i> -Huan
+				</div>
+			</div>
+			<div class="comment">
+				<div class="pic">
+					<img src="images/s4.jpg">
+				</div>
+				<div class="comment-des">
+					<i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.<i class="fas fa-quote-right"></i> - Ashley
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main gal">Our Gallery :</span>
+			</div>
+		</div>
+		<div class="images-block">
+			<div class="images">
+				<img src="images/i1.jpg">
+			</div>
+			<div class="images">
+				<img src="images/i2.jpg">
+			</div>
+			<div class="images">
+				<img src="images/i3.jpg">
+			</div>
+			<div class="images">
+				<img src="images/i4.jpg">
+			</div>
+			<div class="images">
+				<img src="images/i5.jpg">
+			</div>
+			<div class="images">
+				<img src="images/i6.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="section-about" id="section-about">
+			<div class="center">
+				<div>
+					<h1 class="head-secondary about-up">
+						About Us
+					</h1>
+				</div>
+				<div class="paragraph-adjust">
+					<p class="about-text">
+						EXORSA is the Online Annual Technical Fest of MYWBUT.COM, the leading education portal of West Bengal. In the sixth year of EXORSA, students from WBUT (MAKAUT) affiliated colleges as well as students from other Universities will have the opportunity to show their talent among thousands of students.
+
+						With more interesting events and more number of Prizes, EXORSA v6.0 is going to be one of the largest Online Technical Festival.
+
+						As all the Events under EXORSA v6.0 are Online, students can participate from anywhere, no need to visit any particular place. It just requires Internet enabled computer and all done.
+					</p>
+				</div>
+			</div>
+	</section>
+
+	<section class="contact">
+		<div class="center">
+			<div class="head-seconday">
+				<span class="heading-secondary-main con">Contact Us :</span>
+			</div>
+		</div>
+		<div class="info">
+			<div class="phone">
+				<i class="fas fa-phone"></i>
+				<div class="text">+91 9804628251</div>
+				
+			</div>
+			<div class="email phone">
+				<i class="far fa-envelope"></i>
+				<div class="text">jasbindar1998@gmail.com</div>
+				
+			</div>
+		</div>
+			
+	</section>
+
+	<footer class="footer">
+		<div class="social">
+			<i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fab fa-google-plus-g"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fab fa-slack-hash"></i>
+		</div>
+	</footer>
+
+	<div class="navigation">
+		<input type="checkbox" class="navigation_checkbox" id="navigation_toggle"></input>
+		<label for="navigation_toggle" class="navigation_button"><i class="fas fa-bars"></i></label>
+
+		<div class="navigation_background"></div>
+
+		<nav class="navigation_nav">
+			<ul class="nav_list">
+				<li class="nav_item">Events</li>
+				<li class="nav_item">Gallery</li>
+				<li class="nav_item">Contact</li>
+				<li class="nav_item">Register</li>
+				<li class="nav_item">About</li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
